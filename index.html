@@ -21,30 +21,25 @@
       flex-direction: column;
       backdrop-filter: brightness(60%);
     }
-
     .container {
       max-width: 700px;
       padding: 20px;
       background: rgba(0, 0, 0, 0.5);
       border-radius: 20px;
     }
-
     h1 {
       font-size: 3em;
       font-weight: bold;
       margin-bottom: 20px;
     }
-
     #typing {
       font-size: 1.2em;
       line-height: 1.7em;
       font-weight: 600;
       white-space: pre-line;
     }
-
-    iframe {
-      margin-top: 30px;
-      border-radius: 10px;
+    audio {
+      display: none;
     }
   </style>
 </head>
@@ -52,17 +47,13 @@
   <div class="container">
     <h1>Untuk Kamu, Disty</h1>
     <p id="typing"></p>
-
-    <!-- 🎵 Lagu To The Bone (instrumental cover SoundCloud) -->
-    <iframe 
-      width="100%" 
-      height="166" 
-      scrolling="no" 
-      frameborder="no" 
-      allow="autoplay" 
-      src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/ridho-kusumo-hariadi/pamungkas-to-the-bone-instrumental-cover&color=%23ff5500&auto_play=true">
-    </iframe>
   </div>
+
+  <!-- 🎵 Lagu To The Bone autoplay -->
+  <audio autoplay loop preload="auto">
+    <source src="https://audio.jukehost.co.uk/EP0TxaPq3YuAHRDXzFJzq3PvGbDnK3GZ" type="audio/mpeg">
+    Browser kamu tidak mendukung audio.
+  </audio>
 
   <!-- Efek Ngetik -->
   <script>
@@ -79,7 +70,6 @@ Aku sayang kamu, Disty. Banget.`;
     let i = 0;
     const speed = 40;
     const typingElement = document.getElementById("typing");
-
     function typeWriter() {
       if (i < text.length) {
         typingElement.innerHTML += text.charAt(i);
@@ -87,7 +77,6 @@ Aku sayang kamu, Disty. Banget.`;
         setTimeout(typeWriter, speed);
       }
     }
-
     window.onload = typeWriter;
   </script>
 </body>
