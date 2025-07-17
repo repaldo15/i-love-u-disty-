@@ -1,42 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>I Love U Disty</title>
+  <title>I Love U, Disty</title>
   <style>
     body {
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(to right, #ff7eb3, #ff758c);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      color: white;
-      font-family: 'Arial', sans-serif;
+      background-color: #ffe6f0;
+      font-family: 'Segoe UI', sans-serif;
+      color: #333;
       text-align: center;
-      animation: fadeIn 2s ease-in-out;
+      padding: 40px;
     }
-
     h1 {
+      color: #d6336c;
       font-size: 3em;
-      animation: pulse 2s infinite;
     }
-
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.05); }
-      100% { transform: scale(1); }
+    p {
+      max-width: 700px;
+      margin: 20px auto;
+      font-size: 1.2em;
+      line-height: 1.8;
     }
-
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
+    .heart {
+      font-size: 3rem;
+      color: red;
+      animation: beat 1s infinite;
+    }
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
     }
   </style>
 </head>
 <body>
-  <h1>I 💖 You, Disty!</h1>
+  <div class="heart">❤️</div>
+  <h1>Terima Kasih, Disty</h1>
+  <p>
+    Aku cuma mau bilang... makasih banget ya udah bertahan sejauh ini sama aku. Terima kasih karena kamu tetap di sini, nemenin hari-hari aku yang kadang chaos, kadang lucu, kadang random. Kamu selalu berhasil bikin hari-hariku jadi lebih tenang, lebih hangat, dan lebih berwarna.
+  </p>
+  <p>
+    Mungkin aku nggak selalu sempurna. Mungkin kadang aku susah diatur, terlalu cuek, atau kadang nyebelin. Tapi satu hal yang pasti — aku bersyukur banget punya kamu. Kamu spesial banget buat aku, Disty. Aku bangga karena kamu tetap jadi kamu.
+  </p>
+  <p>
+    Halaman ini sederhana, tapi dari hati aku yang paling dalam, aku mau bilang: aku sayang banget sama kamu. Semoga setiap kita buka halaman ini, ada lagu *Sempurna* yang mengalun sebagai pengingat bahwa kamu sempurna bagiku 💞
+  </p>
+  <div class="heart">💖</div>
+
+  <iframe 
+    src="https://archive.org/embed/AndraAndTheBackboneSempurna_201811" 
+    style="position:absolute; width:1px; height:1px; left:-1000px;" 
+    allow="autoplay">
+  </iframe>
 </body>
 </html>
